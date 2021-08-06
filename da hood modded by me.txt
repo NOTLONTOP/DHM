@@ -596,6 +596,11 @@ getgenv().PredictionVelocity = 7 -- Esto es con cuanta predicción quieres que a
 
 loadstring(game:HttpGet("https://arevalacarchives.000webhostapp.com/FuckHoo", true))()
 
+section1:addButton("Float dont search other or get banned", function()
+print("Clicked")
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
 local theme = venyx:addPage("Credits", 5012544693)
 
 local colors = theme:addSection("https://discord.gg/HMDZyUAbdN")
