@@ -219,7 +219,7 @@ function notify(text)
     game.Debris:AddItem(screengui, 2.3)
 end
 
-local akey = Enum.KeyCode.U
+local akey = Enum.KeyCode.Q
 local keyss = false
 local silentaim = false
 local camlock = true
